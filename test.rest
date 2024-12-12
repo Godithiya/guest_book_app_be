@@ -1,0 +1,57 @@
+### Create guest with body
+POST http://localhost:3888/api/guest/create
+Content-Type: application/json
+
+{
+    "name": "angga",
+    "address" : "depok",
+    "message" : "selamat bro"
+}
+
+### Create guest with params
+POST http://localhost:3888/api/guest/create/params/:soapkills/:namek/:selamat%20cuy
+Content-Type: application/json
+
+
+### Read all guest
+GET  http://localhost:3888/api/guest/list
+Content-Type: application/json
+
+
+### Delete guest
+# DELETE http://localhost:3888/api/guest/delete/params/11
+# Content-Type: application/json
+
+### delete guest
+DELETE  http://localhost:3888/api/guest/delete
+Content-Type: application/json
+
+{
+    "ids" : [20, 21, 22, 23]
+}
+
+### Update guest
+PATCH http://localhost:3888/api/guest/update/params/8
+Content-Type: application/json
+
+{
+    "name" : "Jhon alex"
+}
+
+### Update guest vers 2
+PUT http://localhost:3888/api/guest/update
+Content-Type: application/json
+
+{
+    
+}
+
+### random create guest use chance
+POST http://localhost:3888/api/guest/create/random
+Content-Type: application/json
+
+{
+    "name" : "",
+    "address" : "",
+    "message" : ""
+}
